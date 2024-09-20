@@ -25,3 +25,7 @@ mkdir ~/.loginScripts
 1. Replace 'yasin' in the deb_login.sh script with your Debian username.
 
 2. If you're running multiple sessions, only the current session you want to exit will be terminated. This will not close the entire Termux application in such cases.
+
+3. I use ChatGPT for this. But It took me several days to get what I want. I had to ask questions different way. Many solutions were given, but none worked except this. 
+
+4. This repo is for newbie like me. ofcourse experts know better than this. 
