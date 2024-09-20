@@ -11,21 +11,23 @@ This repository provides a solution for users who have installed Debian via proo
 
 Setup Instructions:
 
-1. Create a directory in the Termux environment called .loginScripts:
+1. Create a directory called .loginScripts in the home directory of Termux Environment :
 
 mkdir ~/.loginScripts
 
 2. Move all .sh files into that directory.
 
-3. Edit the .bashrc file by adding the provided lines to the end of it.
+3. Edit the ~/.bashrc file by adding the provided lines to the end of it. Create one if it is not already. mkdir ~/.bashrc
 
 4. Run the command source .bashrc to apply the changes.
 
 # Notes
 1. Replace 'yasin' in the deb_login.sh script with your Debian username.
 
-2. If you're running multiple sessions, only the current session you want to exit will be terminated. This will not close the entire Termux application in such cases.
+2. If you are cloning the repo, move .loginScripts folder to home directory. 
 
-3. I use ChatGPT for this. But It took me several days to get what I want. I had to ask questions different way. Many solutions were given, but none worked except this. 
+3. If you're running multiple sessions, only the current session you want to exit will be terminated. This will not close the entire Termux application in such cases.
 
-4. This repo is for newbie like me. ofcourse experts know better than this. 
+4. I use ChatGPT for this. But It took me several days to get what I want. I had to ask questions different way. Many solutions were given, but none worked except this. 
+
+5. This repo is for newbie like me. ofcourse experts know better than this. 

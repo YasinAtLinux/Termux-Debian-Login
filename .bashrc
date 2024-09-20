@@ -1,4 +1,4 @@
-# ADD FOLLOWING lines in your .bashrc file of termux environment 
+# ADD FOLLOWING lines in your ~/.bashrc file of termux environment, If it is not exist, create one in home directory with  mkdir ~/.bashrc
 
 # Login and Logout from Shell :
 
