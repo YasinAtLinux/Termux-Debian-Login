@@ -8,6 +8,7 @@ When you logout from debian, it will ask whether you want to login in termux env
 2) mv all .sh files into that directory
 3) edit .bashrc file : Add given lines in .bashrc file at the end.
 4) source .bashrc
+   
 **Notes** :
 1) Don't forget to replace yasin in deb_login.sh with your own debian username.
 2) If you are cloning this repo, don't forget to change directory name to .loginScripts
