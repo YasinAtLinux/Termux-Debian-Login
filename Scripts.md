@@ -51,12 +51,16 @@ Follow the same steps as in Version 1.0 for setup and execution.
 
 ## Additional Information:
 
-This logic is also compatible with Manjaro, though a slight modification is required to adapt it for that environment. You have to create manjaro_login.sh instead of void_login.sh. And also change the name in initial_promot.sh. In manjaro_login.sh, 
-proot-distro login manjaro --user username is the command. 
+This logic (Not Script) is also compatible with Manjaro, though a slight modification in Setup_Script_v2.sh  is required to adapt it for that environment. You have to create manjaro_login.sh instead of void_login.sh
+Then Add following command instead of existing one.
+```
+proot-distro login manjaro --user username
+```
+Replace void_login.sh with manjaro_login.sh in initial_prompt.sh.
 
 ---
 
-**Note: Both Scripts does NOT override your ~/.bashrc file. But still you should make a backup for your .bashrc file before executing this script.**
+### Note: Both Scripts does NOT override your ~/.bashrc file. But still you should make a backup for your .bashrc file before executing this script.
 
-## It is working absolutely fine. But You are solely Responsible for doing. 
+## It is working absolutely fine. But YOU are solely Responsible for doing this. 
 
