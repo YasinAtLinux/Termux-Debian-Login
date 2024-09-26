@@ -56,7 +56,7 @@ proot-distro login manjaro --user username is the command.
 
 ---
 
-**Note: Both Scripts does NOT override your ~/.bashrc file. But still you should make a backup for your .bashrc file before executing this script.
+**Note: Both Scripts does NOT override your ~/.bashrc file. But still you should make a backup for your .bashrc file before executing this script.**
 
 ## It is working absolutely fine. But You are solely Responsible for doing. 
 
