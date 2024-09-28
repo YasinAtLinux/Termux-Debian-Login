@@ -22,7 +22,7 @@ mkdir ~/.loginScripts
 4. Run the command source .bashrc to apply the changes.
 
 ## Alternative way
-If you don't want to clone Repo and follow above instruction, then you can just download Setup_Script_v1.sh for termux-debian login management or Setup_Script_v2.sh for Debian-Void-Termux login management. For Further instruction READ Scripts.md
+If you don't want to clone Repo and follow above instruction, then you can just download Setup_Script_v1.sh for termux-debian login management or Setup_Script_v2.sh for Debian-Void-Termux login management. For Further instruction READ Scripts.md in .gitignore directory. You can Download Scripts from there. 
 
 # Notes
 1. Replace 'yasin' in the deb_login.sh script with your Debian username.
