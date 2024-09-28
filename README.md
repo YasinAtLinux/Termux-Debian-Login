@@ -104,7 +104,7 @@ chmod +x Debian-Void-Termux.sh
 chmod +x Debian-Arch-Termux.sh
 ```
 
-## Step 3: Run the Script :
+## Step 4: Run the Script :
 Copy appropriate command from following :
 
 ```
@@ -121,7 +121,14 @@ Copy appropriate command from following :
 ./Debian-Arch-Termux.sh
 ```
 
-This will create a .loginScripts/ directory in your home folder and append necessary login commands to your ~/.bashrc. Again it will NOT overwrite your .bashrc file. 
+This will create a .loginScripts/ directory in your home folder and append necessary login commands to your ~/.bashrc. Again it will NOT overwrite your .bashrc file.
+
+## Step 5: Source .bashrc
+Now Source your .bashrc file.
+
+```
+source ~/.bashrc
+```
 
 ### For Manjaro (Optional for Setup_Script_v2.sh):
 
@@ -158,7 +165,7 @@ ___
 
 1. Replace 'yasin' in the deb_login.sh and arch_login.sh and void_login.sh scripts with your own username which you have set for particular environment.
 
-2. If you are cloning the repo, move .loginScripts folder to home directory.
+2. If you are cloning the repo, move .loginScripts folder to home directory. And add necessary lines into your .bashrc file. Copy those lines from .bashrc file given in my repo.
 
 3. If you're running multiple sessions, only the current session you want to exit will be terminated. This will not close the entire Termux application in such cases.
 
