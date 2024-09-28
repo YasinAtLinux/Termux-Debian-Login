@@ -4,7 +4,7 @@ This repository provides a solution for users running Debian or Void or ArchLinu
 
 # Key Features
 
-- Flexible Login: Upon opening Termux, users are prompted to select between logging into Termux or Debian.
+- Flexible Login: Upon opening Termux, users are prompted to select between logging into Termux or Debian or Arch or Void. 
 
 - Logout Options: When logging out from Debian or Arch or Void, users can either return to the Termux environment or exit the application. (Note: Exiting Termux directly from Debian only works if the login was initiated via the provided method. Manually logging in with proot-distro login debian --user <your-username> bypasses this feature.)
 
@@ -23,6 +23,7 @@ Extends functionality to manage logins for Debian, Void, and Termux environments
 **Debian-Arch-Termux.sh**
 Extends functionality to manage logins for Debian,
  ArchLinux, and Termux environments
+
 ---
 
 # How to Use
