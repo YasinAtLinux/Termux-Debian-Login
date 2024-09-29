@@ -89,7 +89,6 @@ cp ~/.bashrc ~/.bashrc.bak
 ```
 
 ## Step 3: Make the Script Executable
-Check .loginScripts directory with ls -a command.
 
 Now Make Downloaded script to executable. Copy appropriate Command from following :
 
@@ -124,7 +123,7 @@ Copy appropriate command from following :
 ./Debian-Arch-Termux.sh
 ```
 
-This will create a .loginScripts/ directory in your home folder and append necessary login commands to your ~/.bashrc. Again it will NOT overwrite your .bashrc file.
+This will create a .loginScripts/ directory in your home directory and append necessary login commands to your ~/.bashrc. Again, it will NOT overwrite your .bashrc file. You can check if .loginScripts directory is created or not  with ls -a command.
 
 ## Step 5: Source .bashrc
 Now Source your .bashrc file.
@@ -132,14 +131,15 @@ Now Source your .bashrc file.
 ```
 source ~/.bashrc
 ```
+And you are good to go. You can modify script to your liking as long as logic remains intact. 
 
 ---
 
-Additional Information
+## Additional Information
 
-The scripts are designed to integrate seamlessly with your existing .bashrc configuration.
+- The scripts are designed to integrate seamlessly with your existing .bashrc configuration.
 
-Ensure you have the correct usernames in the relevant login scripts for each environment.
+- Ensure you have the correct usernames in the relevant login scripts for each environment.
 
 
 ### > Disclaimer: These scripts have been tested and work as expected. However, you are solely responsible for ensuring proper execution and adjustments based on your system.
@@ -154,6 +154,6 @@ ___
 
 3. If you're running multiple sessions, only the current session you want to exit will be terminated. This will not close the entire Termux application in such cases.
 
-4. I use ChatGPT for this. But It took me several days to get what I want. I had to ask questions in different ways. Many solutions were given, but none worked except this.
+4. I used ChatGPT to create this script. But It took me several days to get what I want. I had to ask questions in different ways. Many solutions were given, but none worked except this.
 
 5. This repo is for newbie like me. ofcourse experts know better than this.
