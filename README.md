@@ -92,15 +92,21 @@ cp ~/.bashrc ~/.bashrc.bak
 
 Now Make Downloaded script to executable. Copy appropriate Command from following :
 
+**For Debian-Termux**
+
 ```
 chmod +x Debian-Termux.sh
 ```
 ### OR
 
+**For Debian-Void-Termux**
+
 ```
 chmod +x Debian-Void-Termux.sh
 ```
 ### OR
+
+**For Debian-Arch-Termux**
 
 ```
 chmod +x Debian-Arch-Termux.sh
@@ -109,15 +115,21 @@ chmod +x Debian-Arch-Termux.sh
 ## Step 4: Run the Script :
 Copy appropriate command from following :
 
+**For Debian-Termux**
+
 ```
 ./Debian-Termux.sh
 ```
 ### OR
 
+**For Debian-Void-Termux**
+
 ```
 ./Debian-Void-Termux.sh
 ```
 ### OR
+
+**For Debian-Arch-Termux**
 
 ```
 ./Debian-Arch-Termux.sh
