@@ -18,7 +18,7 @@ This repository provides scripts to manage logins between different environments
 Manages login for Debian and Termux environments.
 
 **Debian-Void-Termux.sh**
-Extends functionality to manage logins for Debian, Void, and Termux environments, with support for Manjaro (with minor adjustments).
+Extends functionality to manage logins for Debian, Void, and Termux environments. 
 
 **Debian-Arch-Termux.sh**
 Extends functionality to manage logins for Debian,
@@ -50,8 +50,8 @@ wget https://raw.githubusercontent.com/YasinAtLinux/Termux-Debian-Login/main/Set
 ```
 wget https://raw.githubusercontent.com/YasinAtLinux/Termux-Debian-Login/main/SetupScripts/Debian-Arch-Termux.sh
 ```
-## Step 2: Manual Adjustments                                                                       Before running the setup script, follow these steps:
-
+## Step 2: Manual Adjustments                                                                       
+Before running the script, follow this step. 
 Don't forget to replace "yasin" with Your Own username in evey _login.sh file. 
 
 **For Debian:**
@@ -61,7 +61,10 @@ Don't forget to replace "yasin" with Your Own username in evey _login.sh file.
 ```
 nano ~/.loginScripts/deb_login.sh
 ```                                               
-2. Replace yasin with your Debian username.                                                                                                           **For Void Linux (only if You have chosen Debian-Void-Termux.sh):**  
+2. Replace yasin with your Debian username.     
+
+**For Void Linux (only if You have chosen Debian-Void-Termux.sh):**
+
 1. Open .loginScripts/void_login.sh:
 
 ```
@@ -76,10 +79,10 @@ nano ~/.loginScripts/void_login.sh
 nano ~/.loginScripts/arch_login.sh
 ```
                                                  
-2. Replace the default username with your ArchLinux username.
+2. Replace yasin  with your ArchLinux username.
 
 ## NOTE : 
-These scripts will not overwrite your ~/.bashrc file, but it is recommended to take a backup of your .bashrc file.
+These scripts will NOT overwrite your ~/.bashrc file, but it is recommended to take a backup of your .bashrc file.
 
 ```
 cp ~/.bashrc ~/.bashrc.bak
@@ -129,24 +132,6 @@ Now Source your .bashrc file.
 ```
 source ~/.bashrc
 ```
-
-### For Manjaro (Optional for Setup_Script_v2.sh):
-
-You can adapt the script to support Manjaro as follows:
-
-1. Create a new script named manjaro_login.sh:
-
-```
-nano ~/.loginScripts/manjaro_login.sh
-```
-
-2. Add the following command to the script:
-```
-proot-distro login manjaro --user your_username
-```
-
-3. Replace references to void_login.sh in initial_prompt.sh with manjaro_login.sh.
-
 
 ---
 
