@@ -28,7 +28,7 @@ Extends functionality to manage logins for Debian,
 
 # How to Use
 
-## Step 1: Download the Script
+## Step 1 : Download the Script
 
 You can download the scripts by executing following commands :
 Choose appropriate command
@@ -50,37 +50,6 @@ wget https://raw.githubusercontent.com/YasinAtLinux/Termux-Debian-Login/main/Set
 ```
 wget https://raw.githubusercontent.com/YasinAtLinux/Termux-Debian-Login/main/SetupScripts/Debian-Arch-Termux.sh
 ```
-## Step 2: Manual Adjustments                                                                       
-Before running the script, follow this step. 
-Don't forget to replace "yasin" with Your Own username in evey _login.sh file. 
-
-**For Debian:**
-
-1. Open ~/.loginScripts/deb_login.sh:
-
-```
-nano ~/.loginScripts/deb_login.sh
-```                                               
-2. Replace yasin with your Debian username.     
-
-**For Void Linux (only if You have chosen Debian-Void-Termux.sh):**
-
-1. Open .loginScripts/void_login.sh:
-
-```
-nano ~/.loginScripts/void_login.sh
-```
-2. Replace yasin with your Void username
-
-**For Arch Linux (Only if You have chosen Debian-Arch-Termux.sh**
-1. Open ~/.loginScripts/arch.login.sh:
-
-```
-nano ~/.loginScripts/arch_login.sh
-```
-                                                 
-2. Replace yasin  with your ArchLinux username.
-
 ## NOTE : 
 These scripts will NOT overwrite your ~/.bashrc file, but it is recommended to take a backup of your .bashrc file.
 
@@ -88,7 +57,8 @@ These scripts will NOT overwrite your ~/.bashrc file, but it is recommended to t
 cp ~/.bashrc ~/.bashrc.bak
 ```
 
-## Step 3: Make the Script Executable
+
+## Step 2 : Make the Script Executable
 
 Now Make Downloaded script to executable. Copy appropriate Command from following :
 
@@ -97,6 +67,7 @@ Now Make Downloaded script to executable. Copy appropriate Command from followin
 ```
 chmod +x Debian-Termux.sh
 ```
+
 ### OR
 
 **For Debian-Void-Termux**
@@ -104,6 +75,7 @@ chmod +x Debian-Termux.sh
 ```
 chmod +x Debian-Void-Termux.sh
 ```
+
 ### OR
 
 **For Debian-Arch-Termux**
@@ -112,7 +84,16 @@ chmod +x Debian-Void-Termux.sh
 chmod +x Debian-Arch-Termux.sh
 ```
 
-## Step 4: Run the Script :
+## > DISCLAIMER :                    
+
+These scripts will NOT overwrite your ~/.bashrc file, but it is recommended to take a backup of your .bashrc file BEFORE running the script. 
+
+```
+cp ~/.bashrc ~/.bashrc.bak
+```
+
+## Step 3: Run the Script :
+
 Copy appropriate command from following :
 
 **For Debian-Termux**
@@ -120,6 +101,7 @@ Copy appropriate command from following :
 ```
 ./Debian-Termux.sh
 ```
+
 ### OR
 
 **For Debian-Void-Termux**
@@ -127,6 +109,7 @@ Copy appropriate command from following :
 ```
 ./Debian-Void-Termux.sh
 ```
+
 ### OR
 
 **For Debian-Arch-Termux**
@@ -137,7 +120,42 @@ Copy appropriate command from following :
 
 This will create a .loginScripts/ directory in your home directory and append necessary login commands to your ~/.bashrc. Again, it will NOT overwrite your .bashrc file. You can check if .loginScripts directory is created or not  with ls -a command.
 
-## Step 5: Source .bashrc
+## Step 4 : Manual Adjustments
+
+Before running the script, follow this step. Replace "yasin" with your own username in all possible _login.sh files.
+For Example, If you have chosen Debian-Arch-Termux.sh, then change username in *deb_login.sh* and *arch_login.sh*.
+
+**For Debian:**
+1. Open ~/.loginScripts/deb_login.sh :
+
+```
+nano ~/.loginScripts/deb_login.sh
+```
+
+2. Replace 'yasin' with your Debian username.
+ 
+**For Void Linux (only if You have chosen Debian-Void-Termux.sh):**
+
+1. Open .loginScripts/void_login.sh:
+
+```
+nano ~/.loginScripts/void_login.sh
+```
+
+2. Replace 'yasin' with your Void username
+
+**For Arch Linux (Only if You have chosen Debian-Arch-Termux.sh**
+
+1. Open ~/.loginScripts/arch.login.sh:
+
+```
+nano ~/.loginScripts/arch_login.sh
+```
+
+2. Replace 'yasin' with your ArchLinux username.
+
+## Step 5 : Source .bashrc
+
 Now Source your .bashrc file.
 
 ```
