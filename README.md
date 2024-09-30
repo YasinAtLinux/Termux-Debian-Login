@@ -30,7 +30,8 @@ Extends functionality to manage logins for Debian,
 
 ## Step 1 : Download the Script
 
-You can download the scripts by executing following commands :
+You can download the scripts by executing following commands in your **TERMUX ENVIRONMENT** :
+
 Choose appropriate command
 
 **Debian-Termux.sh**
@@ -50,17 +51,10 @@ wget https://raw.githubusercontent.com/YasinAtLinux/Termux-Debian-Login/main/Set
 ```
 wget https://raw.githubusercontent.com/YasinAtLinux/Termux-Debian-Login/main/SetupScripts/Debian-Arch-Termux.sh
 ```
-## NOTE : 
-These scripts will NOT overwrite your ~/.bashrc file, but it is recommended to take a backup of your .bashrc file.
-
-```
-cp ~/.bashrc ~/.bashrc.bak
-```
-
 
 ## Step 2 : Make the Script Executable
 
-Now Make Downloaded script to executable. Copy appropriate Command from following :
+Now Make Downloaded script to executable. Copy appropriate Command from following and execute in your **TERMUX ENVIRONMENT** :
 
 **For Debian-Termux**
 
@@ -86,7 +80,7 @@ chmod +x Debian-Arch-Termux.sh
 
 ## > DISCLAIMER :                    
 
-These scripts will NOT overwrite your ~/.bashrc file, but it is recommended to take a backup of your .bashrc file BEFORE running the script. 
+Before You run the script, You should know that these scripts will NOT overwrite your ~/.bashrc file. It will just append (add) few lines in your .bashrc file. But it is recommended and good practice to take a backup of your ~/.bashrc file BEFORE running the script. 
 
 ```
 cp ~/.bashrc ~/.bashrc.bak
@@ -94,7 +88,13 @@ cp ~/.bashrc ~/.bashrc.bak
 
 ## Step 3: Run the Script :
 
-Copy appropriate command from following :
+DO NOT FORGET to create a .bashrc file in your home directory of Termux Environment, if it is not already exist. 
+
+```
+touch $HOME/.bashrc
+```
+
+Copy appropriate command from following and execute it in **TERMUX ENVIRONMENT** :
 
 **For Debian-Termux**
 
@@ -122,8 +122,10 @@ This will create a .loginScripts/ directory in your home directory and append ne
 
 ## Step 4 : Manual Adjustments
 
-Before running the script, follow this step. Replace "yasin" with your own username in all possible _login.sh files.
-For Example, If you have chosen Debian-Arch-Termux.sh, then change username in *deb_login.sh* and *arch_login.sh*.
+Before running the script, follow this step. Replace "yasin" with your own username in all possible login.sh files.
+**For Example**
+If you have chosen Debian-Arch-Termux.sh, then change username in ***deb_login.sh*** and ***arch_login.sh***.
+Remember, all command should be executed in **Termux Environment**
 
 **For Debian:**
 1. Open ~/.loginScripts/deb_login.sh :
@@ -156,7 +158,7 @@ nano ~/.loginScripts/arch_login.sh
 
 ## Step 5 : Source .bashrc
 
-Now Source your .bashrc file.
+Now Source your .bashrc file in your Termux Environment.
 
 ```
 source ~/.bashrc
